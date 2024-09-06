@@ -71,12 +71,8 @@ const checkWinner = () => {
       count == 9 &&
       (pos1Val != pos2Val || pos2Val != pos3Val || pos1Val != pos3Val)
     ) {
-      drawGame();
     }
   }
-};
-const drawGame = () => {
-  msg.innerText = `No one is winner start again`;
 };
 
 newGamebtn.addEventListener("click", resetGame);
